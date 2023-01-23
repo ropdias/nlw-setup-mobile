@@ -11,9 +11,9 @@ This repository will be used to save the **Front-End (MOBILE)** part of the proj
   - [x] Configuring Android Emulator
   - [x] Creating Expo App
   - [x] Changing Assets (icons and splash screen)
-  - [ ] Installing personal fonts
-    - [ ] Making sure they are loaded
-  - [ ] Create the Loading component
+  - [x] Installing custom fonts
+    - [x] Making sure they are loaded
+  - [x] Creating the Loading component
   - [ ] Status Bar customization
 
 ## Technologies:
