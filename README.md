@@ -13,8 +13,8 @@ This repository will be used to save the **Front-End (MOBILE)** part of the proj
   - [x] Changing Assets (icons and splash screen)
   - [x] Installing custom fonts
     - [x] Making sure they are loaded
-  - [x] Creating the Loading component
-  - [ ] Status Bar customization
+  - [x] Creating a Loading component
+  - [x] Status Bar customization
 
 ## Technologies:
 
