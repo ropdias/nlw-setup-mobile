@@ -27,7 +27,7 @@ This repository will be used to save the **Front-End (MOBILE)** part of the proj
     - [x] Creating the HabitDay component
       - [x] Installing dayjs to manipulate dates
       - [x] Defining pt-br locale for dates
-      - [ ] Reusing the generate-range-between-dates.ts
+      - [x] Reusing the generate-range-between-dates.ts
     - [x] Generating the days in the HabitDay component
     - [x] Creating header of weekdays
 
