@@ -25,8 +25,8 @@ This repository will be used to save the **Front-End (MOBILE)** part of the proj
       - [x] Defining typing of SVG as a component
       - [x] Utilizing vector-icons
     - [x] Creating the HabitDay component
-      - [ ] Installing dayjs to manipulate dates
-      - [ ] Defining pt-br pattern for dates
+      - [x] Installing dayjs to manipulate dates
+      - [x] Defining pt-br locale for dates
       - [ ] Reusing the generate-range-between-dates.ts
     - [x] Generating the days in the HabitDay component
     - [x] Creating header of weekdays
