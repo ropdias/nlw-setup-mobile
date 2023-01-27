@@ -20,9 +20,9 @@ This repository will be used to save the **Front-End (MOBILE)** part of the proj
   - [x] Extending React Native types via declaration merging for tailwind to use className
   - [x] Installing Tailwind CSS Intellisense
   - [ ] Creating Home
-    - [ ] Creating the Header component
-      - [ ] Including logo and utilizing SVG as a component in React Native
-      - [ ] Defining typing of SVG as a component
+    - [x] Creating the Header component
+      - [x] Including logo and utilizing SVG as a component in React Native
+      - [x] Defining typing of SVG as a component
       - [ ] Utilizing vector-icons
     - [ ] Creating the HabitDay component
       - [ ] Installing dayjs to manipulate dates
