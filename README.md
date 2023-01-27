@@ -23,7 +23,7 @@ This repository will be used to save the **Front-End (MOBILE)** part of the proj
     - [x] Creating the Header component
       - [x] Including logo and utilizing SVG as a component in React Native
       - [x] Defining typing of SVG as a component
-      - [ ] Utilizing vector-icons
+      - [x] Utilizing vector-icons
     - [ ] Creating the HabitDay component
       - [ ] Installing dayjs to manipulate dates
       - [ ] Defining pt-br pattern for dates
