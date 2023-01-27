@@ -19,17 +19,17 @@ This repository will be used to save the **Front-End (MOBILE)** part of the proj
   - [x] tailwind.config in React Native
   - [x] Extending React Native types via declaration merging for tailwind to use className
   - [x] Installing Tailwind CSS Intellisense
-  - [ ] Creating Home
+  - [x] Creating Home
     - [x] Creating the Header component
       - [x] Including logo and utilizing SVG as a component in React Native
       - [x] Defining typing of SVG as a component
       - [x] Utilizing vector-icons
-    - [ ] Creating the HabitDay component
+    - [x] Creating the HabitDay component
       - [ ] Installing dayjs to manipulate dates
       - [ ] Defining pt-br pattern for dates
       - [ ] Reusing the generate-range-between-dates.ts
-    - [ ] Generating the days in the HabitDay component
-    - [ ] Creating header of weekdays
+    - [x] Generating the days in the HabitDay component
+    - [x] Creating header of weekdays
 
 ## Technologies:
 
