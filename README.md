@@ -17,8 +17,8 @@ This repository will be used to save the **Front-End (MOBILE)** part of the proj
   - [x] Status Bar customization
   - [x] Knowing and Installing Nativewind
   - [x] tailwind.config in React Native
-  - [ ] Typing className to use tailwind
-  - [ ] Installing Tailwind CSS Intellisense
+  - [x] Extending React Native types via declaration merging for tailwind to use className
+  - [x] Installing Tailwind CSS Intellisense
   - [ ] Creating Home
     - [ ] Creating the Header component
       - [ ] Including logo and utilizing SVG as a component in React Native
