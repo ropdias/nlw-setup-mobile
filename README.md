@@ -33,6 +33,11 @@ This repository will be used to save the **Front-End (MOBILE)** part of the proj
   - [x] Creating basic structure of screens
     - [x] Screen to create new habit (New.tsx)
     - [x] Screen to view details of an habit (Habit.tsx)
+  - [ ] Implementing Navigation
+    - [x] Creating the routes of the application
+    - [x] Navigate to the registration screen
+    - [ ] Defining typing of navigation routes
+    - [ ] Navigate to the Habit screen
 
 ## Technologies:
 
