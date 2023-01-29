@@ -7,6 +7,8 @@ import { generateDatesFromYearBeginning } from "../utils/generate-dates-from-yea
 
 import { HabitDay, DAY_SIZE } from "../components/HabitDay";
 import { Header } from "../components/Header";
+import { Loading } from "../components/Loading";
+import dayjs from "dayjs";
 
 const weekDays = ["D", "S", "T", "Q", "Q", "S", "S"];
 const datesFromYearBeginning = generateDatesFromYearBeginning();
@@ -14,9 +16,16 @@ const minimumSummaryDatesSizes = 13 * 7;
 const amountOfDaysToFill =
   minimumSummaryDatesSizes - datesFromYearBeginning.length;
 
+type Summary = Array<{
+  id: string;
+  date: string;
+  amount: number;
+  completed: number;
+}>;
+
 export function Home() {
   const [loading, setLoading] = useState(true);
-  const [summary, setSummary] = useState(null);
+  const [summary, setSummary] = useState<Summary>([]);
 
   const { navigate } = useNavigation();
 
@@ -38,6 +47,9 @@ export function Home() {
     fetchData();
   }, []);
 
+  if (loading) {
+    return <Loading />;
+  }
 
   return (
     <View className="flex-1 bg-background px-8 pt-16">
@@ -61,8 +73,14 @@ export function Home() {
       >
         <View className="flex-row flex-wrap">
           {datesFromYearBeginning.map((date) => {
+            const dayInSummary = summary.find((day) => {
+              return dayjs(date).isSame(day.date, "day");
+            });
             return (
               <HabitDay
+                amount={dayInSummary?.amount}
+                completed={dayInSummary?.completed}
+                date={date}
                 key={date.toISOString()}
                 onPress={() => navigate("habit", { date: date.toISOString() })}
               />

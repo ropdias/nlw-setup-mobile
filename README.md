@@ -59,10 +59,10 @@ This repository will be used to save the **Front-End (MOBILE)** part of the proj
     - [x] Configuring access to the server
   - [ ] Home screen
     - [x] Getting the summary
-    - [ ] Using the component Loading
-    - [ ] Passing props in the HabitDay component
-      - [ ] Creating a function to calculate the percentage of progress
-      - [ ] Using clsx to use conditional classes
+    - [x] Using the component Loading
+    - [x] Passing props in the HabitDay component
+      - [x] Creating a function to calculate the percentage of progress
+      - [x] Using clsx to use conditional classes
   - [ ] New screen
     - [ ] Getting date from the form
     - [ ] Registering and sending new habit to the API
