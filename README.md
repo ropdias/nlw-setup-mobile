@@ -58,7 +58,7 @@ This repository will be used to save the **Front-End (MOBILE)** part of the proj
   - [x] Installing axios
     - [x] Configuring access to the server
   - [ ] Home screen
-    - [ ] Getting the summary
+    - [x] Getting the summary
     - [ ] Using the component Loading
     - [ ] Passing props in the HabitDay component
       - [ ] Creating a function to calculate the percentage of progress
