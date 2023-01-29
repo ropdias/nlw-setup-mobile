@@ -5,7 +5,9 @@ import {
   Text,
   TextInput,
   TouchableOpacity,
+  Alert,
 } from "react-native";
+import { api } from "../lib/axios";
 import { Feather } from "@expo/vector-icons";
 import colors from "tailwindcss/colors";
 
@@ -23,6 +25,7 @@ const availableWeekDays = [
 ];
 
 export function New() {
+  const [title, setTitle] = useState("");
   const [weekDays, setWeekDays] = useState<number[]>([]);
 
   const handleToggleWeekDay = (weekDayIndex: number) => {
@@ -32,6 +35,31 @@ export function New() {
       );
     } else {
       setWeekDays((prevState) => [...prevState, weekDayIndex]);
+    }
+  };
+
+  const createNewHabit = async () => {
+    try {
+      if (!title.trim() || weekDays.length === 0) {
+        Alert.alert(
+          "Novo hábito",
+          "Informe o nome do hábito e escolha a recorrência."
+        );
+        return;
+      }
+
+      await api.post("habits", {
+        title,
+        weekDays,
+      });
+
+      setTitle("");
+      setWeekDays([]);
+
+      Alert.alert("Novo hábito", "Hábito criado com sucesso!");
+    } catch (error) {
+      console.log(error);
+      Alert.alert("Ops", "Não foi possível criar o novo hábito");
     }
   };
 
@@ -55,6 +83,8 @@ export function New() {
         border-2 border-zinc-800 focus:border-green-600"
           placeholder="Exercícios, dormir bem, etc..."
           placeholderTextColor={colors.zinc[400]}
+          onChangeText={(text) => setTitle(text)}
+          value={title}
         />
 
         <Text className="mt-4 mb-3 text-white font-semibold text-base">
@@ -72,6 +102,7 @@ export function New() {
         <TouchableOpacity
           className="w-full h-14 flex-row items-center justify-center bg-green-600 rounded-md mt-6"
           activeOpacity={0.7}
+          onPress={createNewHabit}
         >
           <Feather name="check" size={20} color={colors.white} />
           <Text className="font-semibold text-base text-white ml-2">

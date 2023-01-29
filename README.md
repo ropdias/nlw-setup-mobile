@@ -57,15 +57,15 @@ This repository will be used to save the **Front-End (MOBILE)** part of the proj
     - [x] Using the CheckBox component
   - [x] Installing axios
     - [x] Configuring access to the server
-  - [ ] Home screen
+  - [x] Home screen
     - [x] Getting the summary
     - [x] Using the component Loading
     - [x] Passing props in the HabitDay component
       - [x] Creating a function to calculate the percentage of progress
       - [x] Using clsx to use conditional classes
-  - [ ] New screen
-    - [ ] Getting date from the form
-    - [ ] Registering and sending new habit to the API
+  - [x] New screen
+    - [x] Getting date from the form
+    - [x] Registering and sending new habit to the API
 
 ## Technologies:
 
