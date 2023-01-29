@@ -37,14 +37,14 @@ This repository will be used to save the **Front-End (MOBILE)** part of the proj
     - [x] Creating the routes of the application
     - [x] Navigating to the New screen
     - [x] Defining typing of navigation routes
-  - [ ] Creating the interface for registering new habits
+  - [x] Creating the interface for registering new habits
     - [x] BackButton component
     - [x] Implementing BackButton in the registration
     - [x] New habit input
     - [x] Checkbox component
     - [x] Creating one Checkbox for each day of the week
     - [x] Create the function to check/uncheck Checkbox
-    - [ ] Confirmation button
+    - [x] Confirmation button
     - [x] Utilizing ScrollView to allow scroll
   - [ ] Creating the habits of the day interface
     - [ ] Navigating to the habits screen
