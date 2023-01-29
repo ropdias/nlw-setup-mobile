@@ -33,11 +33,28 @@ This repository will be used to save the **Front-End (MOBILE)** part of the proj
   - [x] Creating basic structure of screens
     - [x] Screen to create new habit (New.tsx)
     - [x] Screen to view details of an habit (Habit.tsx)
-  - [ ] Implementing Navigation
+  - [x] Implementing Navigation
     - [x] Creating the routes of the application
     - [x] Navigating to the New screen
     - [x] Defining typing of navigation routes
-    - [ ] Navigate to the Habit screen
+  - [ ] Creating the interface for registering new habits
+    - [x] BackButton component
+    - [x] Implementing BackButton in the registration
+    - [ ] New habit input
+    - [ ] Checkbox component
+    - [ ] List one Checkbox for each day of the week
+    - [ ] Create the function to check/uncheck Checkbox
+    - [ ] Confirmation button
+    - [ ] Utilizing ScrollView to allow scroll
+  - [ ] Creating the habits of the day interface
+    - [ ] Navigating to the habits screen
+    - [ ] Using ScrollView to enable scroll
+    - [ ] Reusing the BackButton component
+    - [ ] Passing and retrieving data as a route parameter
+    - [ ] Formatting and showing the day of the week
+    - [ ] Formatting and showing day/month
+    - [ ] Creating the ProgressBar component
+    - [ ] Using the CheckBox component
 
 ## Technologies:
 
