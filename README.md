@@ -55,6 +55,17 @@ This repository will be used to save the **Front-End (MOBILE)** part of the proj
     - [x] Formatting and showing day/month
     - [x] Creating the ProgressBar component
     - [x] Using the CheckBox component
+  - [x] Installing axios
+    - [x] Configuring access to the server
+  - [ ] Home screen
+    - [ ] Getting the summary
+    - [ ] Using the component Loading
+    - [ ] Passing props in the HabitDay component
+      - [ ] Creating a function to calculate the percentage of progress
+      - [ ] Using clsx to use conditional classes
+  - [ ] New screen
+    - [ ] Getting date from the form
+    - [ ] Registering and sending new habit to the API
 
 ## Technologies:
 
