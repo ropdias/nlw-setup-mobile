@@ -40,7 +40,7 @@ This repository will be used to save the **Front-End (MOBILE)** part of the proj
   - [ ] Creating the interface for registering new habits
     - [x] BackButton component
     - [x] Implementing BackButton in the registration
-    - [ ] New habit input
+    - [x] New habit input
     - [ ] Checkbox component
     - [ ] List one Checkbox for each day of the week
     - [ ] Create the function to check/uncheck Checkbox
