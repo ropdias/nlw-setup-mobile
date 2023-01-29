@@ -46,15 +46,15 @@ This repository will be used to save the **Front-End (MOBILE)** part of the proj
     - [x] Create the function to check/uncheck Checkbox
     - [x] Confirmation button
     - [x] Utilizing ScrollView to allow scroll
-  - [ ] Creating the habits of the day interface
-    - [ ] Navigating to the habits screen
-    - [ ] Using ScrollView to enable scroll
-    - [ ] Reusing the BackButton component
-    - [ ] Passing and retrieving data as a route parameter
-    - [ ] Formatting and showing the day of the week
-    - [ ] Formatting and showing day/month
-    - [ ] Creating the ProgressBar component
-    - [ ] Using the CheckBox component
+  - [x] Creating the habits of the day interface
+    - [x] Navigating to the habits screen
+    - [x] Using ScrollView to enable scroll
+    - [x] Reusing the BackButton component
+    - [x] Passing and retrieving data as a route parameter
+    - [x] Formatting and showing the day of the week
+    - [x] Formatting and showing day/month
+    - [x] Creating the ProgressBar component
+    - [x] Using the CheckBox component
 
 ## Technologies:
 
