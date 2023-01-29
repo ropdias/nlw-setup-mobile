@@ -41,11 +41,11 @@ This repository will be used to save the **Front-End (MOBILE)** part of the proj
     - [x] BackButton component
     - [x] Implementing BackButton in the registration
     - [x] New habit input
-    - [ ] Checkbox component
-    - [ ] List one Checkbox for each day of the week
-    - [ ] Create the function to check/uncheck Checkbox
+    - [x] Checkbox component
+    - [x] Creating one Checkbox for each day of the week
+    - [x] Create the function to check/uncheck Checkbox
     - [ ] Confirmation button
-    - [ ] Utilizing ScrollView to allow scroll
+    - [x] Utilizing ScrollView to allow scroll
   - [ ] Creating the habits of the day interface
     - [ ] Navigating to the habits screen
     - [ ] Using ScrollView to enable scroll
