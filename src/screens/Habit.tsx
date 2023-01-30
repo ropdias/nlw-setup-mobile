@@ -10,6 +10,7 @@ import { BackButton } from "../components/BackButton";
 import { ProgressBar } from "../components/ProgressBar";
 import { Checkbox } from "../components/Checkbox";
 import { Loading } from "../components/Loading";
+import { HabitsEmpty } from "../components/HabitsEmpty";
 
 interface Params {
   date: string;
@@ -26,7 +27,10 @@ interface HabitsInfo {
 
 export function Habit() {
   const [loading, setLoading] = useState(true);
-  const [habitsInfo, setHabitsInfo] = useState<HabitsInfo>();
+  const [habitsInfo, setHabitsInfo] = useState<HabitsInfo>({
+    possibleHabits: [],
+    completedHabits: [],
+  });
 
   const route = useRoute();
   const { date } = route.params as Params;
@@ -35,7 +39,7 @@ export function Habit() {
   const dayOfWeek = parsedDate.format("dddd");
   const dayAndMonth = parsedDate.format("DD/MM");
 
-  const completedPercentage = habitsInfo?.possibleHabits.length
+  const completedPercentage = habitsInfo.possibleHabits.length
     ? generateProgressPercentage(
         habitsInfo.possibleHabits.length,
         habitsInfo.completedHabits.length
@@ -62,13 +66,13 @@ export function Habit() {
     // await api.patch(`/habits/${habitId}/toggle`);
 
     const isHabitAlreadyCompleted =
-      habitsInfo?.completedHabits.includes(habitId);
+      habitsInfo.completedHabits.includes(habitId);
 
     if (isHabitAlreadyCompleted) {
       setHabitsInfo((prevState) => {
         return {
-          possibleHabits: prevState!.possibleHabits,
-          completedHabits: prevState!.completedHabits.filter(
+          possibleHabits: prevState.possibleHabits,
+          completedHabits: prevState.completedHabits.filter(
             (id) => id !== habitId
           ),
         };
@@ -76,8 +80,8 @@ export function Habit() {
     } else {
       setHabitsInfo((prevState) => {
         return {
-          possibleHabits: prevState!.possibleHabits,
-          completedHabits: [...prevState!.completedHabits, habitId],
+          possibleHabits: prevState.possibleHabits,
+          completedHabits: [...prevState.completedHabits, habitId],
         };
       });
     }
@@ -109,16 +113,20 @@ export function Habit() {
         <ProgressBar progress={completedPercentage} />
 
         <View className="mt-6">
-          {habitsInfo?.possibleHabits.map((habit) => {
-            return (
-              <Checkbox
-                key={habit.id}
-                title={habit.title}
-                isChecked={habitsInfo.completedHabits.includes(habit.id)}
-                onPress={() => handleToggleHabit(habit.id)}
-              />
-            );
-          })}
+          {habitsInfo.possibleHabits.length ? (
+            habitsInfo.possibleHabits.map((habit) => {
+              return (
+                <Checkbox
+                  key={habit.id}
+                  title={habit.title}
+                  isChecked={habitsInfo.completedHabits.includes(habit.id)}
+                  onPress={() => handleToggleHabit(habit.id)}
+                />
+              );
+            })
+          ) : (
+            <HabitsEmpty />
+          )}
         </View>
       </ScrollView>
     </View>
