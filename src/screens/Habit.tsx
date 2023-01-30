@@ -66,27 +66,32 @@ export function Habit() {
   };
 
   const handleToggleHabit = async (habitId: string) => {
-    // await api.patch(`/habits/${habitId}/toggle`);
+    try {
+      await api.patch(`/habits/${habitId}/toggle`);
 
-    const isHabitAlreadyCompleted =
-      habitsInfo.completedHabits.includes(habitId);
+      const isHabitAlreadyCompleted =
+        habitsInfo.completedHabits.includes(habitId);
 
-    if (isHabitAlreadyCompleted) {
-      setHabitsInfo((prevState) => {
-        return {
-          possibleHabits: prevState.possibleHabits,
-          completedHabits: prevState.completedHabits.filter(
-            (id) => id !== habitId
-          ),
-        };
-      });
-    } else {
-      setHabitsInfo((prevState) => {
-        return {
-          possibleHabits: prevState.possibleHabits,
-          completedHabits: [...prevState.completedHabits, habitId],
-        };
-      });
+      if (isHabitAlreadyCompleted) {
+        setHabitsInfo((prevState) => {
+          return {
+            possibleHabits: prevState.possibleHabits,
+            completedHabits: prevState.completedHabits.filter(
+              (id) => id !== habitId
+            ),
+          };
+        });
+      } else {
+        setHabitsInfo((prevState) => {
+          return {
+            possibleHabits: prevState.possibleHabits,
+            completedHabits: [...prevState.completedHabits, habitId],
+          };
+        });
+      }
+    } catch (error) {
+      console.log(error);
+      Alert.alert("Ops", "Não foi possível atualizar o status do hábito.");
     }
   };
 
