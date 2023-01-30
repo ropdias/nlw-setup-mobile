@@ -77,8 +77,8 @@ This repository will be used to save the **Front-End (MOBILE)** part of the proj
   - [x] Animation
     - [x] Knowing React Native Reanimated
     - [x] Installing and configuring Reanimated in the application
-    - [ ] Animating ProgressBar
-    - [ ] Animating Checkbox
+    - [x] Animating ProgressBar
+    - [x] Animating Checkbox
 
 ## Technologies:
 
