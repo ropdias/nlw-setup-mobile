@@ -69,8 +69,8 @@ This repository will be used to save the **Front-End (MOBILE)** part of the proj
   - [ ] Habit screen
     - [x] Get from API the habits of the day
     - [x] Show the list of habits of the day
-    - [x] Create a component of an empty habit list
-    - [ ] Verify if selected date is from the past and show message that user can't edit
+    - [x] Created HabitsEmpty component to show an empty habit list
+    - [x] Checking if selected date is from the past and show message that user can't edit
     - [x] Show progress
   - [ ] Send to the API the status of the habit (toggle/untoggle)
     - [ ] Using useFocusEffect to update home when return
