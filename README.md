@@ -74,9 +74,9 @@ This repository will be used to save the **Front-End (MOBILE)** part of the proj
     - [x] Show progress
   - [x] Send to the API the status of the habit (toggle/untoggle)
     - [x] Using useFocusEffect to update home when return
-  - [ ] Animation
-    - [ ] Knowing React Native Reanimated
-    - [ ] Installing and configuring Reanimated in the application
+  - [x] Animation
+    - [x] Knowing React Native Reanimated
+    - [x] Installing and configuring Reanimated in the application
     - [ ] Animating ProgressBar
     - [ ] Animating Checkbox
 
